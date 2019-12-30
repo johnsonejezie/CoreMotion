@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5F8DEE223BA6FF30075D4D8 /* CoreMotion WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A5F8DEE123BA6FF30075D4D8 /* CoreMotion WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5F8DEE823BA6FF30075D4D8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F8DEE623BA6FF30075D4D8 /* Interface.storyboard */; };
+		A5F8DEEA23BA6FF40075D4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F8DEE923BA6FF40075D4D8 /* Assets.xcassets */; };
+		A5F8DEF123BA6FF40075D4D8 /* CoreMotion WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5F8DEF023BA6FF40075D4D8 /* CoreMotion WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5F8DEF623BA6FF40075D4D8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8DEF523BA6FF40075D4D8 /* InterfaceController.swift */; };
+		A5F8DEF823BA6FF40075D4D8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8DEF723BA6FF40075D4D8 /* ExtensionDelegate.swift */; };
+		A5F8DEFC23BA6FF50075D4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F8DEFB23BA6FF50075D4D8 /* Assets.xcassets */; };
+		A5F8DF0F23BA79820075D4D8 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8DF0E23BA79820075D4D8 /* MotionManager.swift */; };
+		A5F8DF1123BA816A0075D4D8 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8DF1023BA816A0075D4D8 /* WorkoutManager.swift */; };
+		A5F8DF1323BA8E300075D4D8 /* CBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8DF1223BA8E300075D4D8 /* CBManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5F8DEE323BA6FF30075D4D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5F8DED723BA6FF20075D4D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5F8DEE023BA6FF30075D4D8;
+			remoteInfo = "CoreMotion WatchKit App";
+		};
+		A5F8DEF223BA6FF40075D4D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5F8DED723BA6FF20075D4D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5F8DEEF23BA6FF40075D4D8;
+			remoteInfo = "CoreMotion WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5F8DF0423BA6FF50075D4D8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5F8DEF123BA6FF40075D4D8 /* CoreMotion WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F8DF0823BA6FF50075D4D8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A5F8DEE223BA6FF30075D4D8 /* CoreMotion WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A5F8DEDD23BA6FF20075D4D8 /* CoreMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F8DEE123BA6FF30075D4D8 /* CoreMotion WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreMotion WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F8DEE723BA6FF30075D4D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A5F8DEE923BA6FF40075D4D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5F8DEEB23BA6FF40075D4D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5F8DEF023BA6FF40075D4D8 /* CoreMotion WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CoreMotion WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F8DEF523BA6FF40075D4D8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A5F8DEF723BA6FF40075D4D8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A5F8DEFB23BA6FF50075D4D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5F8DEFD23BA6FF50075D4D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5F8DF0E23BA79820075D4D8 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		A5F8DF1023BA816A0075D4D8 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		A5F8DF1223BA8E300075D4D8 /* CBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5F8DEED23BA6FF40075D4D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5F8DED623BA6FF20075D4D8 = {
+			isa = PBXGroup;
+			children = (
+				A5F8DEE523BA6FF30075D4D8 /* CoreMotion WatchKit App */,
+				A5F8DEF423BA6FF40075D4D8 /* CoreMotion WatchKit Extension */,
+				A5F8DEDE23BA6FF20075D4D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5F8DEDE23BA6FF20075D4D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5F8DEDD23BA6FF20075D4D8 /* CoreMotion.app */,
+				A5F8DEE123BA6FF30075D4D8 /* CoreMotion WatchKit App.app */,
+				A5F8DEF023BA6FF40075D4D8 /* CoreMotion WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5F8DEE523BA6FF30075D4D8 /* CoreMotion WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A5F8DEE623BA6FF30075D4D8 /* Interface.storyboard */,
+				A5F8DEE923BA6FF40075D4D8 /* Assets.xcassets */,
+				A5F8DEEB23BA6FF40075D4D8 /* Info.plist */,
+			);
+			path = "CoreMotion WatchKit App";
+			sourceTree = "<group>";
+		};
+		A5F8DEF423BA6FF40075D4D8 /* CoreMotion WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A5F8DEF523BA6FF40075D4D8 /* InterfaceController.swift */,
+				A5F8DEF723BA6FF40075D4D8 /* ExtensionDelegate.swift */,
+				A5F8DEFB23BA6FF50075D4D8 /* Assets.xcassets */,
+				A5F8DEFD23BA6FF50075D4D8 /* Info.plist */,
+				A5F8DF0E23BA79820075D4D8 /* MotionManager.swift */,
+				A5F8DF1023BA816A0075D4D8 /* WorkoutManager.swift */,
+				A5F8DF1223BA8E300075D4D8 /* CBManager.swift */,
+			);
+			path = "CoreMotion WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5F8DEDC23BA6FF20075D4D8 /* CoreMotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F8DF0923BA6FF50075D4D8 /* Build configuration list for PBXNativeTarget "CoreMotion" */;
+			buildPhases = (
+				A5F8DEDB23BA6FF20075D4D8 /* Resources */,
+				A5F8DF0823BA6FF50075D4D8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5F8DEE423BA6FF30075D4D8 /* PBXTargetDependency */,
+			);
+			name = CoreMotion;
+			productName = CoreMotion;
+			productReference = A5F8DEDD23BA6FF20075D4D8 /* CoreMotion.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		A5F8DEE023BA6FF30075D4D8 /* CoreMotion WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F8DF0523BA6FF50075D4D8 /* Build configuration list for PBXNativeTarget "CoreMotion WatchKit App" */;
+			buildPhases = (
+				A5F8DEDF23BA6FF30075D4D8 /* Resources */,
+				A5F8DF0423BA6FF50075D4D8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5F8DEF323BA6FF40075D4D8 /* PBXTargetDependency */,
+			);
+			name = "CoreMotion WatchKit App";
+			productName = "CoreMotion WatchKit App";
+			productReference = A5F8DEE123BA6FF30075D4D8 /* CoreMotion WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A5F8DEEF23BA6FF40075D4D8 /* CoreMotion WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F8DF0123BA6FF50075D4D8 /* Build configuration list for PBXNativeTarget "CoreMotion WatchKit Extension" */;
+			buildPhases = (
+				A5F8DEEC23BA6FF40075D4D8 /* Sources */,
+				A5F8DEED23BA6FF40075D4D8 /* Frameworks */,
+				A5F8DEEE23BA6FF40075D4D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreMotion WatchKit Extension";
+			productName = "CoreMotion WatchKit Extension";
+			productReference = A5F8DEF023BA6FF40075D4D8 /* CoreMotion WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5F8DED723BA6FF20075D4D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Johnson;
+				TargetAttributes = {
+					A5F8DEDC23BA6FF20075D4D8 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A5F8DEE023BA6FF30075D4D8 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A5F8DEEF23BA6FF40075D4D8 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A5F8DEDA23BA6FF20075D4D8 /* Build configuration list for PBXProject "CoreMotion" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5F8DED623BA6FF20075D4D8;
+			productRefGroup = A5F8DEDE23BA6FF20075D4D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5F8DEDC23BA6FF20075D4D8 /* CoreMotion */,
+				A5F8DEE023BA6FF30075D4D8 /* CoreMotion WatchKit App */,
+				A5F8DEEF23BA6FF40075D4D8 /* CoreMotion WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5F8DEDB23BA6FF20075D4D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F8DEDF23BA6FF30075D4D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F8DEEA23BA6FF40075D4D8 /* Assets.xcassets in Resources */,
+				A5F8DEE823BA6FF30075D4D8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F8DEEE23BA6FF40075D4D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F8DEFC23BA6FF50075D4D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5F8DEEC23BA6FF40075D4D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F8DF0F23BA79820075D4D8 /* MotionManager.swift in Sources */,
+				A5F8DF1123BA816A0075D4D8 /* WorkoutManager.swift in Sources */,
+				A5F8DEF823BA6FF40075D4D8 /* ExtensionDelegate.swift in Sources */,
+				A5F8DEF623BA6FF40075D4D8 /* InterfaceController.swift in Sources */,
+				A5F8DF1323BA8E300075D4D8 /* CBManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5F8DEE423BA6FF30075D4D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5F8DEE023BA6FF30075D4D8 /* CoreMotion WatchKit App */;
+			targetProxy = A5F8DEE323BA6FF30075D4D8 /* PBXContainerItemProxy */;
+		};
+		A5F8DEF323BA6FF40075D4D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5F8DEEF23BA6FF40075D4D8 /* CoreMotion WatchKit Extension */;
+			targetProxy = A5F8DEF223BA6FF40075D4D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5F8DEE623BA6FF30075D4D8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5F8DEE723BA6FF30075D4D8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5F8DEFF23BA6FF50075D4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5F8DF0023BA6FF50075D4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5F8DF0223BA6FF50075D4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRGN64L84L;
+				INFOPLIST_FILE = "CoreMotion WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnson.CoreMotion.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		A5F8DF0323BA6FF50075D4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRGN64L84L;
+				INFOPLIST_FILE = "CoreMotion WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnson.CoreMotion.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		A5F8DF0623BA6FF50075D4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRGN64L84L;
+				IBSC_MODULE = CoreMotion_WatchKit_Extension;
+				INFOPLIST_FILE = "CoreMotion WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnson.CoreMotion.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		A5F8DF0723BA6FF50075D4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRGN64L84L;
+				IBSC_MODULE = CoreMotion_WatchKit_Extension;
+				INFOPLIST_FILE = "CoreMotion WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnson.CoreMotion.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		A5F8DF0A23BA6FF50075D4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QRGN64L84L;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnson.CoreMotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A5F8DF0B23BA6FF50075D4D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QRGN64L84L;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnson.CoreMotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5F8DEDA23BA6FF20075D4D8 /* Build configuration list for PBXProject "CoreMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F8DEFF23BA6FF50075D4D8 /* Debug */,
+				A5F8DF0023BA6FF50075D4D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F8DF0123BA6FF50075D4D8 /* Build configuration list for PBXNativeTarget "CoreMotion WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F8DF0223BA6FF50075D4D8 /* Debug */,
+				A5F8DF0323BA6FF50075D4D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F8DF0523BA6FF50075D4D8 /* Build configuration list for PBXNativeTarget "CoreMotion WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F8DF0623BA6FF50075D4D8 /* Debug */,
+				A5F8DF0723BA6FF50075D4D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F8DF0923BA6FF50075D4D8 /* Build configuration list for PBXNativeTarget "CoreMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F8DF0A23BA6FF50075D4D8 /* Debug */,
+				A5F8DF0B23BA6FF50075D4D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5F8DED723BA6FF20075D4D8 /* Project object */;
+}
